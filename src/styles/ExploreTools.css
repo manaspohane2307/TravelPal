@@ -1,0 +1,81 @@
+.explore-section {
+    padding: 80px 20px;
+    background-color: #fdfcf9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .explore-main-heading {
+    font-size: 44px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .explore-description {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .explore-box {
+    background-color: #EAE4D5;
+    padding: 60px 40px;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .explore-subheading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  
+  .tools-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  
+  .tool-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    min-width: 180px;
+    max-width: 220px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .tool-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+  }
+  
+  .tool-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  
