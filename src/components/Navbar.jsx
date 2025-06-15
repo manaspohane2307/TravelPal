@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -11,11 +12,11 @@ const Navbar = () => {
 
       {/* Center */}
       <div className="navbar-center">
-        <a href="#">Blog</a>
-        <a href="#">Trip Planner</a>
-        <a href="#">Travel Guides</a>
-        <a href="#">Saved Trips</a>
-        <a href="#">Resources</a>
+        <Link to="#">Blog</Link>
+        <Link to="/trip-planner">Trip Planner</Link>
+        <Link to="#">Travel Guides</Link>
+        <Link to="#">Saved Trips</Link>
+        <Link to="#">Resources</Link>
       </div>
 
       {/* Right */}
@@ -27,3 +28,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

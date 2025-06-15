@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .step-four-page {
+    width: 100%;
+    background-color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-four-page h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  /* Button row styling */
+  .button-row {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Common button style for both buttons */
+  .form-button {
+    padding: 14px 24px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .form-button:hover {
+    background-color: #222;
+  }
+  
+  
