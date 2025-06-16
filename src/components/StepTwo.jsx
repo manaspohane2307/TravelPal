@@ -10,7 +10,6 @@ const StepTwo = ({ formData, setFormData, nextStep, prevStep }) => {
     <div className="step-two-page">
       <h2>Travel Preferences</h2>
 
-      {/* Existing questions */}
       <div className="form-group">
         <label>Who are you traveling with?</label>
         <select
@@ -86,47 +85,6 @@ const StepTwo = ({ formData, setFormData, nextStep, prevStep }) => {
       </div>
 
       <div className="form-group">
-        <label>Do you have a visa or need assistance?</label>
-        <select name="visa" value={formData.visa || ""} onChange={handleChange}>
-          <option value="">Select</option>
-          <option value="Have Visa">I already have a visa</option>
-          <option value="Need Assistance">I need visa assistance</option>
-          <option value="Visa Free">Destination is visa-free</option>
-        </select>
-      </div>
-
-      {/* New Questions */}
-      <div className="form-group">
-        <label>What is your preferred travel pace?</label>
-        <select
-          name="detailedTravelPace"
-          value={formData.detailedTravelPace || ""}
-          onChange={handleChange}
-        >
-          <option value="">Select</option>
-          <option value="Relaxed">Relaxed</option>
-          <option value="Moderate">Moderate</option>
-          <option value="Packed">Packed with activities</option>
-        </select>
-      </div>
-
-      <div className="form-group">
-        <label>
-          Do you enjoy guided tours or prefer exploring on your own?
-        </label>
-        <select
-          name="tourPreference"
-          value={formData.tourPreference || ""}
-          onChange={handleChange}
-        >
-          <option value="">Select</option>
-          <option value="Guided Tours">Guided tours</option>
-          <option value="Self">Self-exploration</option>
-          <option value="Mix">Mix of both</option>
-        </select>
-      </div>
-
-      <div className="form-group">
         <label>What is your accommodation preference?</label>
         <select
           name="accommodation"
@@ -170,20 +128,6 @@ const StepTwo = ({ formData, setFormData, nextStep, prevStep }) => {
       </div>
 
       <div className="form-group">
-        <label>Do you want time allocated for shopping or local markets?</label>
-        <select
-          name="shopping"
-          value={formData.shopping || ""}
-          onChange={handleChange}
-        >
-          <option value="">Select</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-          <option value="Maybe">Maybe</option>
-        </select>
-      </div>
-
-      <div className="form-group">
         <label>Are you interested in cultural experiences?</label>
         <select
           name="culture"
@@ -194,47 +138,6 @@ const StepTwo = ({ formData, setFormData, nextStep, prevStep }) => {
           <option value="Yes">Yes</option>
           <option value="No">No</option>
           <option value="Somewhat">Somewhat</option>
-        </select>
-      </div>
-
-      <div className="form-group">
-        <label>What is your food preference while traveling?</label>
-        <select name="food" value={formData.food || ""} onChange={handleChange}>
-          <option value="">Select</option>
-          <option value="Local">Local/Street food</option>
-          <option value="Veg">Vegetarian/Vegan only</option>
-          <option value="Fine Dining">Fine dining</option>
-          <option value="Any">Any</option>
-        </select>
-      </div>
-
-      <div className="form-group">
-        <label>
-          Do you prefer visiting popular tourist attractions or hidden gems?
-        </label>
-        <select
-          name="spots"
-          value={formData.spots || ""}
-          onChange={handleChange}
-        >
-          <option value="">Select</option>
-          <option value="Popular">Popular spots</option>
-          <option value="Hidden">Hidden gems</option>
-          <option value="Balanced">Balanced mix</option>
-        </select>
-      </div>
-
-      <div className="form-group">
-        <label>What is your ideal daily start time for sightseeing?</label>
-        <select
-          name="startTime"
-          value={formData.startTime || ""}
-          onChange={handleChange}
-        >
-          <option value="">Select</option>
-          <option value="7-9 AM">Early morning (7–9 AM)</option>
-          <option value="9-11 AM">Mid-morning (9–11 AM)</option>
-          <option value="Flexible">Flexible</option>
         </select>
       </div>
 
