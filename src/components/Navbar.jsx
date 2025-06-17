@@ -14,14 +14,14 @@ const Navbar = () => {
       <div className="navbar-center">
         <Link to="#">Blog</Link>
         <Link to="/trip-planner">Trip Planner</Link>
-        <Link to="#">Travel Guides</Link>
+        <Link to="/travel-guides">Travel Guides</Link>
         <Link to="#">Saved Trips</Link>
         <Link to="#">Resources</Link>
       </div>
 
       {/* Right */}
       <div className="navbar-right">
-        <span className="user-email">Guest</span>
+        <span className="user-email">manspohane@gmail.com</span>
       </div>
     </nav>
   );

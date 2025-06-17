@@ -15,7 +15,7 @@ const HowItWorks = () => {
       <h1 className="how-heading">How WanderPilot Works</h1>
       <div className="how-box">
         <div className="how-text">
-          <h2 className="sub-heading">Plan smarter, not harder</h2>
+          <h2 className="sub-heading">Plan Smarter With WanderPilot</h2>
           <p className="how-paragraph">
             WanderPilot revolutionizes trip planning by combining user input with intelligent AI processing.
             Just tell us about your dream trip, and we’ll build an optimized day-by-day itinerary for you.
