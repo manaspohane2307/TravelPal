@@ -1,0 +1,71 @@
+.dubai-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dubai-heading {
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+.dubai-tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.dubai-main-image {
+  display: block;
+  width: 100%;
+  max-height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.dubai-content {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.dubai-content h2 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.dubai-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.dubai-content li {
+  margin-bottom: 10px;
+}
+
+.dubai-content p {
+  margin-bottom: 16px;
+}
+
+.dubai-map {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.dubai-map h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+  

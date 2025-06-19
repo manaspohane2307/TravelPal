@@ -1,0 +1,56 @@
+.hamburg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hamburg-heading {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+.hamburg-tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.hamburg-main-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hamburg-content {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.hamburg-content h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+.hamburg-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.hamburg-content li {
+  margin-bottom: 10px;
+}
+
+.hamburg-map {
+  margin: 30px 0;
+}

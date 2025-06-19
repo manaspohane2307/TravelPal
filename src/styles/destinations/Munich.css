@@ -1,0 +1,49 @@
+.munich-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.munich-heading {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.munich-quote {
+  font-size: 1.2rem;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.munich-image {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.munich-content h2 {
+  margin-top: 30px;
+  font-weight: bold;
+  color: #222;
+}
+
+.munich-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.munich-content li {
+  margin-bottom: 10px;
+}
+
+.munich-map {
+  margin: 40px 0;
+}

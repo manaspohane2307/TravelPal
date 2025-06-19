@@ -1,0 +1,57 @@
+.london-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+}
+
+.london-heading {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.london-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #555555;
+}
+
+.london-main-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.london-content {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.london-content h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.london-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.london-content li {
+  margin-bottom: 10px;
+}
+
+.london-map {
+  margin: 30px 0;
+}
+
+  
