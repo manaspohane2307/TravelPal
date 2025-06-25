@@ -9,6 +9,13 @@ import ConclusionSection from "./components/ConclusionSection";
 import Footer from "./components/Footer";
 import TripPlanner from "./components/TripPlanner";
 import TravelGuides from "./components/TravelGuides";
+import Blogs from "./pages/blogs/Blogs"; // ✅ Corrected path for Blogs.jsx
+import Blog1 from "./pages/blogs/Blog1.jsx";
+import Blog2 from "./pages/blogs/Blog2.jsx";
+import Blog3 from "./pages/blogs/Blog3.jsx";
+import Blog4 from "./pages/blogs/Blog4.jsx";
+import Blog5 from "./pages/blogs/Blog5.jsx";
+import Blog6 from "./pages/blogs/Blog6.jsx";
 
 // Destination component imports (ensure all exist)
 import AbuDhabi from "./components/destinations/AbuDhabi";
@@ -70,6 +77,15 @@ function App() {
 
           {/* Travel Guides Overview */}
           <Route path="/travel-guides" element={<TravelGuides />} />
+
+          {/* Blogs Page */}
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/hidden-gems-europe" element={<Blog1 />} />
+          <Route path="/blogs/solo-travel-tips" element={<Blog2 />} />
+          <Route path="/blogs/budget-travel-hacks" element={<Blog3 />} />
+          <Route path="/blogs/top-food-destinations" element={<Blog4 />} />
+          <Route path="/blogs/packing-tips" element={<Blog5 />} />
+          <Route path="/blogs/beach-escapes" element={<Blog6 />} />
 
           {/* Destination Pages */}
           <Route path="/abudhabi" element={<AbuDhabi />} />

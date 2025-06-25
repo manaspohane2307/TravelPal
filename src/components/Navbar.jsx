@@ -12,11 +12,10 @@ const Navbar = () => {
 
       {/* Center */}
       <div className="navbar-center">
-        <Link to="#">Blog</Link>
+        <Link to="/blogs">Blog</Link>
         <Link to="/trip-planner">Trip Planner</Link>
         <Link to="/travel-guides">Travel Guides</Link>
         <Link to="#">Saved Trips</Link>
-        <Link to="#">Resources</Link>
       </div>
 
       {/* Right */}
