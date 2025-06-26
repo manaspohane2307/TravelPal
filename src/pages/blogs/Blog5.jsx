@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/blogs/Blog5.css";
 import blog5Img from "../../assets/blogs/blog5.jpg";
+import Footer from "../../components/Footer";
 
 const Blog5 = () => {
   return (
@@ -91,6 +92,7 @@ const Blog5 = () => {
           without heavy baggage.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };

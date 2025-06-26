@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/blogs/Blog4.css";
 import blog4Img from "../../assets/blogs/blog4.jpg";
+import Footer from "../../components/Footer";
 
 const Blog4 = () => {
   return (
@@ -78,6 +79,7 @@ const Blog4 = () => {
           plan a trip, let your taste buds lead the way.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };

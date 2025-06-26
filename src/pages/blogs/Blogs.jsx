@@ -7,6 +7,7 @@ import blog3Img from "../../assets/blogs/blog3.jpg";
 import blog4Img from "../../assets/blogs/blog4.jpg";
 import blog5Img from "../../assets/blogs/blog5.jpg";
 import blog6Img from "../../assets/blogs/blog6.jpg";
+import Footer from "../../components/Footer";
 
 
 const blogPosts = [
@@ -100,7 +101,9 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
+    
   );
 };
 

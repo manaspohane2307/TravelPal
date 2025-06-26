@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/blogs/Blog2.css";
 import blog2Img from "../../assets/blogs/blog2.jpg";
+import Footer from "../../components/Footer";
 
 const Blog2 = () => {
   return (
@@ -87,6 +88,7 @@ const Blog2 = () => {
           unforgettable.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };

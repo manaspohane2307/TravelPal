@@ -20,7 +20,6 @@ const Footer = () => {
               <li>Trip Planner</li>
               <li>Travel Guides</li>
               <li>Saved Trips</li>
-              <li>Resources</li>
             </ul>
           </div>
 

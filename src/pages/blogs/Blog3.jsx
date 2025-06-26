@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/blogs/Blog3.css";
 import blog3Img from "../../assets/blogs/blog3.jpg";
+import Footer from "../../components/Footer";
 
 const Blog3 = () => {
   return (
@@ -93,6 +94,7 @@ const Blog3 = () => {
           You'll return home with richer stories, not an emptier wallet.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

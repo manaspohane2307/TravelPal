@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/blogs/Blog6.css";
 import blog6Img from "../../assets/blogs/blog6.jpg";
+import Footer from "../../components/Footer";
 
 const Blog6 = () => {
   return (
@@ -66,6 +67,7 @@ const Blog6 = () => {
           paradise.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };

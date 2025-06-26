@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/blogs/Blog1.css";
 import blog1Img from "../../assets/blogs/blog1.jpg";
+import Footer from "../../components/Footer";
 
 const Blog1 = () => {
   return (
@@ -111,6 +112,7 @@ const Blog1 = () => {
           unforgettable stories and experiences that few others have.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };
