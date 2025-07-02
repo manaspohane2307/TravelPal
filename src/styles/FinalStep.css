@@ -106,6 +106,16 @@
   a:hover {
     color: #254D70;
   }
+
+  .destination-map {
+    margin: 1.5rem 0;
+  }
+  
+  .destination-map h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
   
   
   

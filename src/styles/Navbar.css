@@ -1,57 +1,63 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 0 24px;
-    font-family: 'Poppins', sans-serif;
-    color: #000000;
-    border-bottom: 1px solid #ddd;
-    z-index: 1000;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  /* Left section - Logo */
-  .navbar-left .navbar-logo {
-    font-size: 24px;
-    font-weight: 600;
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Center - Nav links */
-  .navbar-center {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar-center a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-center a:hover {
-    color: #000000;
-    text-decoration: underline;
-  }
-  
-  /* Right - User Email */
-  .navbar-right .user-email {
-    font-size: 14px;
-    font-weight: 500;
-    color: #000000;
-    background-color: #ffffff;
-    padding: 4px 12px;
-    border-radius: 6px;
-  }
-  
-   
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #f7f7f7, #ffffff);
+  padding: 0 32px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.navbar-left .navbar-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-left .navbar-logo:hover {
+  color: #555;
+}
+
+/* Nav links */
+.navbar-center {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-center a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.navbar-center a:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+/* Right email */
+.navbar-right .user-email {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 6px 14px;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
+}

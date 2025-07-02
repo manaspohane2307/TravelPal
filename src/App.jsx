@@ -16,6 +16,9 @@ import Blog3 from "./pages/blogs/Blog3.jsx";
 import Blog4 from "./pages/blogs/Blog4.jsx";
 import Blog5 from "./pages/blogs/Blog5.jsx";
 import Blog6 from "./pages/blogs/Blog6.jsx";
+import MyBlogs from "./pages/blogs/MyBlogs";
+import Profile from "./components/Profile.jsx";
+
 
 // Destination component imports (ensure all exist)
 import AbuDhabi from "./components/destinations/AbuDhabi";
@@ -78,8 +81,11 @@ function App() {
           {/* Travel Guides Overview */}
           <Route path="/travel-guides" element={<TravelGuides />} />
 
+          <Route path="/profile" element={<Profile />} />
+
           {/* Blogs Page */}
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/my-blogs" element={<MyBlogs />} />
           <Route path="/blogs/hidden-gems-europe" element={<Blog1 />} />
           <Route path="/blogs/solo-travel-tips" element={<Blog2 />} />
           <Route path="/blogs/budget-travel-hacks" element={<Blog3 />} />

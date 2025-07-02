@@ -73,7 +73,7 @@ const FinalStep = ({ formData, prevStep }) => {
     lines.forEach((line, index) => {
       const trimmed = line.trim();
 
-      // Detect Title heading like: 8-Day Trip from Mumbai to Japan (July 1 to July 8)
+      // Detect Title heading
       if (/^\d+-Day Trip from .* to .*/i.test(trimmed)) {
         if (inList) {
           formatted.push(<ul key={`list-${index}`}>{currentList}</ul>);
@@ -188,6 +188,16 @@ const FinalStep = ({ formData, prevStep }) => {
           disabled={!itinerary}
         >
           Export Itinerary
+        </button>
+        <button
+          className="primary-button"
+          onClick={() => {
+            // TODO: Save itinerary to Firebase or backend
+            console.log("Trip saved!");
+          }}
+          disabled={!itinerary}
+        >
+          Save Trip
         </button>
         <button className="secondary-button" onClick={prevStep}>
           ⬅ Back

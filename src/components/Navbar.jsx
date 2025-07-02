@@ -7,7 +7,9 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Left */}
       <div className="navbar-left">
-        <h1 className="navbar-logo">WanderPilot</h1>
+        <Link to="/" className="navbar-logo">
+          <h1>WanderPilot</h1>
+        </Link>
       </div>
 
       {/* Center */}
@@ -15,12 +17,14 @@ const Navbar = () => {
         <Link to="/blogs">Travel Blog</Link>
         <Link to="/trip-planner">Trip Planner</Link>
         <Link to="/travel-guides">Travel Guides</Link>
-        <Link to="#">Saved Trips</Link>
+        <Link to="/my-blogs">My Blogs</Link>
       </div>
 
       {/* Right */}
       <div className="navbar-right">
-        <span className="user-email">manspohane@gmail.com</span>
+        <Link to="/profile" className="user-email">
+          manspohane@gmail.com
+        </Link>
       </div>
     </nav>
   );
