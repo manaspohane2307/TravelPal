@@ -1,0 +1,122 @@
+.signup-page {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0f2f1, #b2dfdb);
+  }
+  
+  .signup-left {
+    flex: 1;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.06);
+  }
+  
+  .signup-left h1 {
+    font-size: 32px;
+    color: #254D70;
+    margin-bottom: 12px;
+  }
+  
+  .signup-left p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .signup-left form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-left label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  .signup-left input {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .signup-left input:focus {
+    border-color: #26a69a;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  .agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #444;
+  }
+  
+  .agree input {
+    margin-right: 10px;
+  }
+  
+  .agree a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: #254D70;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1e3a56;
+  }
+  
+  .login-link {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .link {
+    color: #254D70;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: crimson;
+    margin-bottom: 10px;
+  }
+  
+  .signup-right {
+    flex: 1;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-right img {
+    max-width: 90%;
+    height: auto;
+  }
+  

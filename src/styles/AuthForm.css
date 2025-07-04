@@ -1,0 +1,111 @@
+.auth-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #254D70, #537895, #7CA5B8);
+  padding: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.auth-form form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 32px;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.auth-form h2 {
+  color: #254D70;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.auth-form input {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.auth-form input:focus {
+  border-color: #254D70;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 77, 112, 0.1);
+}
+
+.auth-form button {
+  padding: 12px;
+  background-color: #254D70;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form button:hover {
+  background-color: #1e3e5a;
+  transform: translateY(-1px);
+}
+
+.auth-form p {
+  font-size: 14px;
+  color: #444;
+}
+
+.auth-form .link {
+  color: #254D70;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.auth-form .link:hover {
+  text-decoration: underline;
+  color: #1e3e5a;
+}
+
+.auth-form .error {
+  color: crimson;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: -4px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-position: top left;
+  }
+  to {
+    opacity: 1;
+    background-position: bottom right;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
