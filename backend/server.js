@@ -6,18 +6,20 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import blogsRouter from "./routes/blogRoutes.js";
-import authRoutes from "./routes/auth.js"; // ✅ NEW
-import { protect } from "./middleware/authMiddleware.js"; // ✅ NEW
+import authRoutes from "./routes/auth.js";
+import { protect } from "./middleware/authMiddleware.js";
 
-// Setup __dirname
 const __filename = fileURLToPath(import.meta.url);
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+const __dirname = path.dirname(__filename);
 
-
-// Load .env
 dotenv.config();
 
-// Connect MongoDB
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
@@ -26,19 +28,14 @@ mongoose
   .then(() => console.log("🟢 MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
-const app = express();
+app.use("/api/auth", authRoutes);
+app.use("/api/blogs", blogsRouter);
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("🚀 Travel Itinerary Backend is running");
+});
 
-// Static file serving
-app.use("/uploads", express.static("uploads"));
-
-// Routes
-app.use("/api/auth", authRoutes); // ✅ Auth
-app.use("/api/blogs", blogsRouter); // ✅ Blog (now protected)
-
-app.listen(5000, () => {
-  console.log("🚀 Server running on http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });

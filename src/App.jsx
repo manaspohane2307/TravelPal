@@ -13,6 +13,7 @@ import Profile from "./components/Profile";
 import TripPlanner from "./components/TripPlanner";
 import TravelGuides from "./components/TravelGuides";
 import Blogs from "./pages/blogs/Blogs";
+import PlanPage from "./components/PlanPage"; 
 
 // Blog Details
 import Blog1 from "./pages/blogs/Blog1";
@@ -63,11 +64,9 @@ const AppRoutes = () => (
       <Routes>
         {/* Home */}
         <Route path="/" element={<Home />} />
-
         {/* Auth */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-
         {/* Blogs */}
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/hidden-gems-europe" element={<Blog1 />} />
@@ -76,15 +75,13 @@ const AppRoutes = () => (
         <Route path="/blogs/top-food-destinations" element={<Blog4 />} />
         <Route path="/blogs/packing-tips" element={<Blog5 />} />
         <Route path="/blogs/beach-escapes" element={<Blog6 />} />
-
         {/* Public Pages */}
         <Route path="/my-blogs" element={<MyBlogsPage />} />
         <Route path="/profile" element={<Profile />} />
-
-        {/* Optional Auth-Only Pages */}
-        <Route path="/trip-planner" element={<TripPlanner />} />
         <Route path="/travel-guides" element={<TravelGuides />} />
-
+        {/* Trip Planner */}
+        <Route path="/trip-planner" element={<TripPlanner />} />
+        <Route path="/plan" element={<PlanPage />} /> {/* ✅ NEW ROUTE */}
         {/* Destinations */}
         <Route path="/abudhabi" element={<AbuDhabi />} />
         <Route path="/austin" element={<Austin />} />

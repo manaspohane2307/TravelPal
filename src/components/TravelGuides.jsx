@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/TravelGuides.css";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
-// Local image imports (make sure these images exist in your /assets folder)
+// Image imports
 import abudhabiImg from "../assets/abudhabi.jpg";
 import austinImg from "../assets/austin.jpg";
 import bangkokImg from "../assets/bangkok.jpg";
@@ -37,7 +37,7 @@ import tulumImg from "../assets/tulum.jpg";
 import veniceImg from "../assets/venice.jpg";
 import viennaImg from "../assets/vienna.jpg";
 
-// Destination data
+// Destination list
 const destinations = [
   { city: "Abu Dhabi", country: "UAE", image: abudhabiImg, path: "/abudhabi" },
   { city: "Austin", country: "USA", image: austinImg, path: "/austin" },
@@ -99,26 +99,52 @@ const destinations = [
 ];
 
 const TravelGuides = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filtered = destinations.filter((item) =>
+    `${item.city} ${item.country}`
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="travel-guides-container">
-      <h1>Explore Destinations</h1>
-      <h3>Curated travel guides for your destination</h3>
+      <h1 className="guide-heading">🌍 Discover Your Next Destination</h1>
+      <p className="guide-subtitle">
+        ✈️ Tailored travel guides to inspire your journey
+      </p>
+
+      <input
+        type="text"
+        className="destination-search"
+        placeholder="🔍 Search your destination..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
 
       <div className="card-grid">
-        {destinations.map((item, index) => (
-          <Link to={item.path} key={index} className="destination-card">
-            <div className="card-image">
-              <img src={item.image} alt={item.city} />
-            </div>
-            <div className="card-text">
-              <h2>{item.city}</h2>
-              <p>{item.country}</p>
-            </div>
-          </Link>
-        ))}
+        {filtered.length > 0 ? (
+          filtered.map((item, index) => (
+            <Link to={item.path} key={index} className="destination-card">
+              <div className="card-image">
+                <img src={item.image} alt={item.city} />
+              </div>
+              <div className="card-text">
+                <h2>{item.city}</h2>
+                <p>{item.country}</p>
+              </div>
+            </Link>
+          ))
+        ) : (
+          <p className="no-results">😕 No destinations found.</p>
+        )}
       </div>
 
-      <div style={{ marginBottom: "60px" }}></div>
+      <p className="final-call">
+        🌟 Let your heart guide the way — search, explore, and enjoy the
+        journey!
+      </p>
+
       <Footer />
     </div>
   );

@@ -1,0 +1,162 @@
+/* Page Container */
+.plan-page-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #111;
+  }
+  
+  /* Header */
+  .plan-page-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .plan-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .plan-subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  /* Google Map */
+  .map-container {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Response / Itinerary */
+  .plan-content-box {
+    background-color: #ffffff; /* Keep this white */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px #eee;
+    line-height: 1.7;
+    white-space: pre-line;
+  }
+  
+  .day-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #000;
+  }
+  
+  .subheading {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 18px;
+    color: #222;
+  }
+  
+  .plan-text {
+    margin-top: 8px;
+    color: #444;
+    font-size: 16px;
+  }
+  
+  /* Main Action Buttons */
+  .plan-buttons-bottom {
+    display: none;
+  }
+  
+  /* Follow-up CTA */
+  .plan-followup-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .followup-text {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  
+  .followup-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .followup-buttons button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #444;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .followup-buttons button:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-2px);
+  }
+  
+  /* Quotation Box */
+  .quotation-highlight {
+    margin-top: 30px;
+  padding: 30px 25px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  margin-inline: auto;
+  border: 2px solid #ff3333;
+  animation: glow-border 2s infinite;
+  }
+  
+  .quotation-heading {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+  
+  .quotation-msg {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #dddddd;
+  }
+  
+  .quotation-button {
+    background-color: #ff3333;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .quotation-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.03);
+  }
+
+  @keyframes glow-border {
+    0% {
+      box-shadow: 0 0 0px #ff4d4d, 0 0 10px #ff4d4d;
+    }
+    50% {
+      box-shadow: 0 0 12px #ff1a1a, 0 0 20px #ff1a1a;
+    }
+    100% {
+      box-shadow: 0 0 0px #ff4d4d, 0 0 10px #ff4d4d;
+    }
+  }
+  

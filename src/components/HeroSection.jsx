@@ -7,19 +7,26 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero-text">
         <h2 className="hero-title">Discover WanderPilot</h2>
-        <h1 className="hero-line">The Smarter Way to Travel and Plan Your Trips</h1>
+        <h1 className="hero-line">
+          From Dreaming to Departing — Effortless Travel Planning Starts Here
+        </h1>
+
+        <div className="hero-image-container">
+          <img src={heroImg} alt="Travel inspiration" className="hero-image" />
+        </div>
+
         <p className="hero-subtext">
-        WanderPilot brings simplicity to your journeys by turning complex travel plans into seamless itineraries.
-        WanderPilot curates custom itineraries just for you, blending your interests, budget, and time into the perfect travel experience.
+          Say goodbye to stressful planning — WanderPilot simplifies your entire
+          travel experience with intelligent, personalized trip creation
+          tailored to your needs. No more spreadsheets, tabs, endless research,
+          or decision fatigue. From spontaneous weekend escapes to
+          once-in-a-lifetime adventures, WanderPilot curates every detail to
+          match your style, time, and budget — delivering seamless journeys that
+          feel effortless, yet unforgettable.
         </p>
-      </div>
-      <div className="hero-image-container">
-        <img src={heroImg} alt="Travel inspiration" className="hero-image" />
       </div>
     </section>
   );
 };
 
 export default HeroSection;
-
-

@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/blogs/Blog1.css";
 import blog1Img from "../../assets/blogs/blog1.jpg";
 import Footer from "../../components/Footer";
 
 const Blog1 = () => {
+  const [liked, setLiked] = useState(false);
+  const [bookmarked, setBookmarked] = useState(false);
+
+  const toggleLike = () => setLiked(!liked);
+  const toggleBookmark = () => setBookmarked(!bookmarked);
+
+  const handleShare = () => {
+    navigator.clipboard.writeText(window.location.href);
+    alert("Blog link copied to clipboard!");
+  };
+
   return (
     <div className="blog1-container">
       <img
@@ -11,7 +22,29 @@ const Blog1 = () => {
         alt="Hidden Gems in Europe"
         className="blog1-banner"
       />
-      <h1 className="blog1-title">Hidden Gems in Europe</h1>
+
+      <div className="blog1-header">
+        <h1 className="blog1-title">Hidden Gems in Europe</h1>
+        <div className="blog1-actions">
+          <button
+            className={`action-btn ${liked ? "active" : ""}`}
+            onClick={toggleLike}
+            title="Like"
+          >
+            ❤️
+          </button>
+          <button
+            className={`action-btn ${bookmarked ? "active" : ""}`}
+            onClick={toggleBookmark}
+            title="Bookmark"
+          >
+            🔖
+          </button>
+          <button className="action-btn" onClick={handleShare} title="Share">
+            📤
+          </button>
+        </div>
+      </div>
 
       <div className="blog1-section">
         <h2>Introduction</h2>
@@ -112,7 +145,8 @@ const Blog1 = () => {
           unforgettable stories and experiences that few others have.
         </p>
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };

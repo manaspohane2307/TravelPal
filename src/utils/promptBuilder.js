@@ -1,88 +1,57 @@
 export const buildItineraryPrompt = (formData) => {
-  const {
-    destination,
-    source,
-    startDate,
-    endDate,
-    travelWith,
-    ageGroup,
-    travelPace,
-    transportMode,
-    budget,
-    foodPreferences,
-    dietaryRestrictions,
-    preferredCuisines,
-    streetFoodInterest,
-    fineDiningInterest,
-    mustTryFoods,
-    natureLover,
-    adventureSeeker,
-    historyBuff,
-    artAndCulture,
-    nightlifeLover,
-    relaxationPreference,
-  } = formData;
+  const { tripType, booking, source, destination, month, duration, flexible } =
+    formData;
 
   return `
-Create a personalized and immersive travel itinerary for a user with the following preferences:
+You are an expert travel planner. Based on the user’s preferences below, create a **highly detailed and immersive travel itinerary**. The user wants a customized trip plan tailored to their preferences.
 
-# Basic Info:
+# User Preferences:
+- Travel Type: ${tripType === "domestic" ? "Within India" : "International"}
 - Destination: ${destination}
-- Source: ${source}
-- Travel Dates: ${startDate} to ${endDate}
-- Travel Companions: ${travelWith}
-- Age Group: ${ageGroup}
-- Preferred Travel Pace: ${travelPace}
-- Mode of Transport: ${transportMode}
-- Budget: ${budget}
-
-# Food Preferences:
-- Likes: ${foodPreferences}
-- Dietary Restrictions: ${dietaryRestrictions}
-- Preferred Cuisines: ${preferredCuisines}
-- Street Food: ${streetFoodInterest}
-- Fine Dining: ${fineDiningInterest}
-- Must-Try Dishes: ${mustTryFoods}
-
-# Experience Interests:
-- Nature & Scenic Spots: ${natureLover}
-- Adventure Activities: ${adventureSeeker}
-- Historical Sites & Monuments: ${historyBuff}
-- Art & Culture (Museums, Galleries, Performances): ${artAndCulture}
-- Nightlife (Bars, Clubs, Events): ${nightlifeLover}
-- Relaxation (Spas, Beaches, Quiet Retreats): ${relaxationPreference}
+${booking === "yes" ? `- Departure City: ${source}` : ""}
+- Preferred Month: ${month}
+- Duration: ${duration}
+- Flexible Dates: ${flexible === "yes" ? "Yes" : "No"}
 
 ---
 
-# Output Format (Highly Detailed):
+# Instructions for Output:
 
-## 1. Trip Heading:
-A title like "**6-Day Adventure in Japan: Culture, Cuisine & Nature **"
-
-## 2. Introduction:
-Engaging paragraph about the destination — what makes it special, and why it's a perfect choice based on the user's preferences.
-
-## 3. Hotel / Lodging Suggestions:
-7 hotels or stays based on the budget and type of experience — include links if possible.
-
-## 4. Daily Itinerary:
-For **each day**, provide:
-
-- **Day Heading**: "Day 1: Arrival & Local Orientation"
-- **Morning**: Specific spots, opening times, what to expect, travel tips.
-- **Afternoon**: Attractions or experiences, including relevant food stops.
-- **Evening**: Relaxation, dining, cultural shows, or nightlife depending on interests.
-- **Food Spots**: Name restaurants or street food stalls based on cuisine preferences.
-- **Cultural Notes or Local Tips**: Local phrases, etiquette, hidden corners, etc.
-
-Be very detailed. Each day’s plan should feel like a local guide is walking the user through the city, matching their interests and preferences.
+- Return output **in clean, well-formatted Markdown-style sections**.
+- **Do not include any Google Maps links** or raw URLs.
+- Focus on **informative and structured output**. No HTML or iframes.
+- Make it suitable for rendering in a travel itinerary UI.
 
 ---
 
-# Final Notes:
-- Add **MakeMyTrip** links for hotel and travel suggestions (if available).
-- Keep the tone friendly, curious, and personalized.
-- Assume the user wants a well-balanced trip (not too hectic).
-- Avoid generic descriptions — focus on **real places, local experiences, and personalized storytelling**.
+# Output Format:
+
+## 1. Destination Overview:
+- A brief but rich introduction to ${destination}.
+- Add relevant cultural and seasonal highlights for ${month}.
+
+## 2. Suggested Stay:
+- Recommend 3 unique accommodations for this trip.
+- Mention location, style (luxury, nature-based, budget-friendly), and why it fits the trip.
+- No links — just names and descriptions.
+
+## 3. Day-by-Day Plan:
+Create a **detailed itinerary for ${duration}**. For each day, include:
+
+- **Day X**
+- **Morning**: Activities with short descriptions
+- **Afternoon**: Sightseeing and food/café suggestions
+- **Evening**: Events, walks, or cultural things - **Travel Tips**: Entry fees, customs, local tricks
+
+- Do **not use Markdown formatting like --- or ===** for dividers or titles.
+
+- Only bold the components : Destination Overview, Suggested Stay, Day X , Final Notes
+
+## 4. Final Notes:
+- Must include useful local phrases or customs.
+- Add any local events or must-dos for ${month}.
+- Keep tone friendly, vivid, and helpful.
+
+Only include relevant and updated data. Make the output immersive, not robotic.
 `;
 };
