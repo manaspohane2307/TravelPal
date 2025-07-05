@@ -4,6 +4,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// Common Components
 import Navbar from "./components/Navbar";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/SignUp";
@@ -13,9 +14,9 @@ import Profile from "./components/Profile";
 import TripPlanner from "./components/TripPlanner";
 import TravelGuides from "./components/TravelGuides";
 import Blogs from "./pages/blogs/Blogs";
-import PlanPage from "./components/PlanPage"; 
+import PlanPage from "./components/PlanPage";
 
-// Blog Details
+// Blog Pages
 import Blog1 from "./pages/blogs/Blog1";
 import Blog2 from "./pages/blogs/Blog2";
 import Blog3 from "./pages/blogs/Blog3";
@@ -23,7 +24,7 @@ import Blog4 from "./pages/blogs/Blog4";
 import Blog5 from "./pages/blogs/Blog5";
 import Blog6 from "./pages/blogs/Blog6";
 
-// Destinations
+// Destination Pages
 import AbuDhabi from "./components/destinations/AbuDhabi";
 import Austin from "./components/destinations/Austin";
 import Bangkok from "./components/destinations/Bangkok";
@@ -57,17 +58,24 @@ import Tulum from "./components/destinations/Tulum";
 import Venice from "./components/destinations/Venice";
 import Vienna from "./components/destinations/Vienna";
 
+// Maldives Quotations Page
+import MaldivesQuotations from "./pages/quotations/MaldivesQuotations";
+
+// Maldives Quotation Detail Cards
+import MaldivesCard1 from "./components/cards/maldives/MaldivesCard1";
+import MaldivesCard2 from "./components/cards/maldives/MaldivesCard2";
+import MaldivesCard3 from "./components/cards/maldives/MaldivesCard3";
+import MaldivesCard4 from "./components/cards/maldives/MaldivesCard4";
+import MaldivesCard5 from "./components/cards/maldives/MaldivesCard5";
+
 const AppRoutes = () => (
   <>
     <Navbar />
     <main style={{ paddingTop: "80px" }}>
       <Routes>
-        {/* Home */}
         <Route path="/" element={<Home />} />
-        {/* Auth */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        {/* Blogs */}
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/hidden-gems-europe" element={<Blog1 />} />
         <Route path="/blogs/solo-travel-tips" element={<Blog2 />} />
@@ -75,46 +83,21 @@ const AppRoutes = () => (
         <Route path="/blogs/top-food-destinations" element={<Blog4 />} />
         <Route path="/blogs/packing-tips" element={<Blog5 />} />
         <Route path="/blogs/beach-escapes" element={<Blog6 />} />
-        {/* Public Pages */}
         <Route path="/my-blogs" element={<MyBlogsPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/travel-guides" element={<TravelGuides />} />
-        {/* Trip Planner */}
         <Route path="/trip-planner" element={<TripPlanner />} />
-        <Route path="/plan" element={<PlanPage />} /> {/* ✅ NEW ROUTE */}
-        {/* Destinations */}
-        <Route path="/abudhabi" element={<AbuDhabi />} />
-        <Route path="/austin" element={<Austin />} />
-        <Route path="/bangkok" element={<Bangkok />} />
-        <Route path="/barcelona" element={<Barcelona />} />
-        <Route path="/cabosanlucas" element={<CaboSanLucas />} />
-        <Route path="/cancum" element={<Cancum />} />
-        <Route path="/como" element={<Como />} />
-        <Route path="/dubai" element={<Dubai />} />
-        <Route path="/goa" element={<Goa />} />
-        <Route path="/hamburg" element={<Hamburg />} />
-        <Route path="/ibiza" element={<Ibiza />} />
-        <Route path="/lasvegas" element={<LasVegas />} />
-        <Route path="/london" element={<London />} />
-        <Route path="/madrid" element={<Madrid />} />
-        <Route path="/marrakech" element={<Marrakech />} />
-        <Route path="/maui" element={<Maui />} />
-        <Route path="/miami" element={<Miami />} />
-        <Route path="/milan" element={<Milan />} />
-        <Route path="/minori" element={<Minori />} />
-        <Route path="/moritz" element={<Moritz />} />
-        <Route path="/munich" element={<Munich />} />
-        <Route path="/newyork" element={<NewYork />} />
-        <Route path="/paris" element={<Paris />} />
-        <Route path="/reykjavik" element={<Reykjavik />} />
-        <Route path="/riyadh" element={<Riyadh />} />
-        <Route path="/rome" element={<Rome />} />
-        <Route path="/sanya" element={<Sanya />} />
-        <Route path="/sharjah" element={<Sharjah />} />
-        <Route path="/tokyo" element={<Tokyo />} />
-        <Route path="/tulum" element={<Tulum />} />
-        <Route path="/venice" element={<Venice />} />
-        <Route path="/vienna" element={<Vienna />} />
+        <Route path="/plan" element={<PlanPage />} />
+
+        {/* Maldives Quotation Main Page */}
+        <Route path="/quotations/maldives" element={<MaldivesQuotations />} />
+
+        {/* Maldives Card Pages */}
+        <Route path="/quotations/maldives/card1" element={<MaldivesCard1 />} />
+        <Route path="/quotations/maldives/card2" element={<MaldivesCard2 />} />
+        <Route path="/quotations/maldives/card3" element={<MaldivesCard3 />} />
+        <Route path="/quotations/maldives/card4" element={<MaldivesCard4 />} />
+        <Route path="/quotations/maldives/card5" element={<MaldivesCard5 />} />
       </Routes>
     </main>
   </>

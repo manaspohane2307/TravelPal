@@ -15,9 +15,11 @@ const TripPlanner = () => {
 
   const handleGenerate = async () => {
     setLoading(true);
+
     const prompt = buildItineraryPrompt(formData);
     const result = await generateItinerary(prompt);
     setLoading(false);
+
     navigate("/plan", {
       state: {
         plan: result,
@@ -25,6 +27,7 @@ const TripPlanner = () => {
       },
     });
   };
+  
 
   return (
     <div className="trip-planner-wrapper">
@@ -105,6 +108,7 @@ const TripPlanner = () => {
               <>
                 <option value="Dubai">Dubai</option>
                 <option value="Bali">Bali</option>
+                <option value="Maldives">Maldives</option> 
                 <option value="Paris">Paris</option>
                 <option value="Singapore">Singapore</option>
                 <option value="Thailand">Thailand</option>

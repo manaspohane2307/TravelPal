@@ -1,0 +1,59 @@
+.card2-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .card2-title {
+    font-size: 2.2rem;
+    color: #254D70;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    color: #254D70;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+    line-height: 1.7;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  .itinerary-section h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  
+  details {
+    margin: 10px 0;
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  details summary {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  

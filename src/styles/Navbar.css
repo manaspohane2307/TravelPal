@@ -1,3 +1,4 @@
+/* Navbar container */
 .navbar {
   position: fixed;
   top: 0;
@@ -8,12 +9,13 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #f7f7f7, #ffffff);
-  padding: 0 32px;
+  padding: 0 24px;
   font-family: 'Poppins', sans-serif;
   color: #333;
   border-bottom: 1px solid #e0e0e0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Logo */
@@ -30,10 +32,11 @@
   color: #555;
 }
 
-/* Nav links */
+/* Nav links - Center */
 .navbar-center {
   display: flex;
-  gap: 24px;
+  gap: 14px; /* Reduced from 24px */
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 .navbar-center a {
@@ -41,17 +44,41 @@
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 6px;
-  transition: background 0.2s ease;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar-center a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: #254D70;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-center a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar-center a:hover {
   background-color: #f0f0f0;
-  text-decoration: none;
 }
 
-/* Right email */
+/* Right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .navbar-right .user-email {
   font-size: 14px;
   font-weight: 500;
@@ -60,10 +87,15 @@
   padding: 6px 14px;
   border-radius: 8px;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
+  transition: background-color 0.3s;
+}
+
+.navbar-right .user-email:hover {
+  background-color: #e0e0e0;
 }
 
 .logout-button {
-  margin-left: 12px;
+  margin-left: 6px;
   background: #f44336;
   color: white;
   border: none;
@@ -78,35 +110,14 @@
   background: #d32f2f;
 }
 
-.nav-auth {
-  font-size: 14px;
-  font-weight: 500;
-  color: #444;
-  background-color: #f3f3f3;
-  padding: 6px 14px;
-  border-radius: 8px;
-  margin-left: 8px;
-  text-decoration: none;
-  transition: background 0.2s;
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.nav-auth:hover {
-  background-color: #e0e0e0;
-}
-
-.logout-btn {
-  background: #ff4d4f;
-  color: white;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 8px;
-  margin-left: 12px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.logout-btn:hover {
-  background: #d9363e;
-}
-
-

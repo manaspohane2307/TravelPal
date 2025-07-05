@@ -1,0 +1,96 @@
+.cards-section {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .cards-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 280px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 12px #00d9ff;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #00d9ff;
+  }
+  
+  .card-meta {
+    font-size: 0.9rem;
+    margin: 4px 0;
+    color: #ccc;
+  }
+  
+  .card-description {
+    margin-top: 8px;
+    font-size: 0.88rem;
+    color: #e0e0e0;
+  }
+  
+  .card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .btn {
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .btn-view {
+    background-color: #00d9ff;
+    color: #000;
+  }
+  
+  .btn-quote {
+    background-color: #00ffc8;
+    color: #000;
+  }
+  
+  .btn-compare {
+    background-color: #f5c518;
+    color: #000;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  

@@ -1,0 +1,59 @@
+.card5-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card5-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card5-content {
+    padding: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .card5-content h2 {
+    font-size: 26px;
+    color: #254D70;
+    margin-bottom: 10px;
+  }
+  
+  .card5-content .duration {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card5-content h3 {
+    color: #333;
+    margin-top: 24px;
+    font-size: 20px;
+    border-bottom: 2px solid #EFE4D2;
+    padding-bottom: 6px;
+  }
+  
+  .card5-content ul,
+  .card5-content ol {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  
+  .card5-content ul li,
+  .card5-content ol li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  .card5-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #444;
+  }
+  

@@ -130,9 +130,7 @@ const PlanPage = () => {
             <button
               className="quotation-button"
               onClick={() =>
-                navigate("/quotation", {
-                  state: { destination: destinationName, plan },
-                })
+                navigate(`/quotations/${destinationName.toLowerCase()}`)
               }
             >
               💰 Generate Quotation Now

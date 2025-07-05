@@ -26,6 +26,8 @@ const Navbar = () => {
 
       {/* Center: Main Nav */}
       <div className="navbar-center">
+        <Link to="/">Home</Link>
+        <Link to="/quotations/maldives">Quotations</Link>
         <Link to="/blogs">Travel Blog</Link>
         <Link to="/trip-planner">Trip Planner</Link>
         <Link to="/travel-guides">Travel Guides</Link>
