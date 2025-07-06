@@ -3,10 +3,11 @@ import "../styles/HowItWorks.css";
 
 const steps = [
   "Enter Trip Details",
-  "AI Analyzes Preferences",
-  "Itinerary is Generated",
+  "AI Analyzes Preferences and generates itinerary",
   "Customize & Edit",
-  "Save or Share Your Plan"
+  "Save or Share Your Plan",
+  "Generate Quotations",
+  "Explore travel packages"
 ];
 
 const HowItWorks = () => {

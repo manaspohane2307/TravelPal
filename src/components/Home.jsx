@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
+import WhoWeAre from "./WhoWeAre";
 import TellUsYourPlans from "../components/TellUsYourPlans";
 import HowItWorks from "../components/HowItWorks";
 import ExploreTools from "../components/ExploreTools";
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
+      <WhoWeAre />
       <TellUsYourPlans />
       <HowItWorks />
       <ExploreTools />

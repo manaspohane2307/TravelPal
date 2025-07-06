@@ -23,7 +23,7 @@ const cardsData = [
   },
   {
     img: cardImg2,
-    title: "Luxury Water Villas Tour",
+    title: "Radisson Blu Maldives Water Villa",
     duration: "5 Days / 4 Nights",
     price: "₹108,400/- per person",
     discount: "10%",
@@ -87,55 +87,52 @@ const MaldivesCards = () => {
   };
 
   return (
-    <section className="cards-section">
-      <div className="cards-grid">
-        {cardsData.map((card) => (
-          <div key={card.title} className="card">
-            <img src={card.img} alt={card.title} className="card-img" />
-            <div className="card-content">
-              <h3 className="card-title">{card.title}</h3>
-              <p className="card-meta">
-                <strong>Duration:</strong> {card.duration}
-              </p>
-              <p className="card-meta">
-                <strong>Price:</strong> {card.price}
-              </p>
-              <p className="card-meta">
-                <strong>Discount:</strong> {card.discount} off
-              </p>
-              <p className="card-meta">
-                <strong>{card.stars}</strong>
-              </p>
-              <p className="card-meta">
-                <strong>Cities:</strong> {card.cities}
-              </p>
-              <p className="card-description">{card.quote}</p>
-
-              <div className="card-actions">
-                <button
-                  className="btn btn-view"
-                  onClick={() => handleViewDetails(card.detailsRoute)}
-                >
-                  View Details
-                </button>
-                <button
-                  className="btn btn-quote"
-                  onClick={() => handleGetQuote(card.title)}
-                >
-                  Get Quote
-                </button>
-                <button
-                  className="btn btn-compare"
-                  onClick={() => handleAddToCompare(card.title)}
-                >
-                  Add to Compare
-                </button>
-              </div>
+    <div className="cards-scroll-wrapper">
+      {cardsData.map((card) => (
+        <div key={card.title} className="card">
+          <img src={card.img} alt={card.title} className="card-img" />
+          <div className="card-content">
+            <h3 className="card-title">{card.title}</h3>
+            <p className="card-meta">
+              <strong>Duration:</strong> {card.duration}
+            </p>
+            <p className="card-meta">
+              <strong>Price:</strong> {card.price}
+            </p>
+            <p className="card-meta">
+              <strong>Discount:</strong> {card.discount} off
+            </p>
+            <p className="card-meta">
+              <strong>{card.stars}</strong>
+            </p>
+            <p className="card-meta">
+              <strong>Cities:</strong> {card.cities}
+            </p>
+            <p className="card-description">{card.quote}</p>
+            <div className="card-actions">
+              <button
+                className="btn btn-view"
+                onClick={() => handleViewDetails(card.detailsRoute)}
+              >
+                View Details
+              </button>
+              <button
+                className="btn btn-quote"
+                onClick={() => handleGetQuote(card.title)}
+              >
+                Get Quote
+              </button>
+              <button
+                className="btn btn-compare"
+                onClick={() => handleAddToCompare(card.title)}
+              >
+                Add to Compare
+              </button>
             </div>
           </div>
-        ))}
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
   );
 };
 

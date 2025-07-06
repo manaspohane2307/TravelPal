@@ -25,6 +25,7 @@ const HeroSection = () => {
           feel effortless, yet unforgettable.
         </p>
       </div>
+
     </section>
   );
 };

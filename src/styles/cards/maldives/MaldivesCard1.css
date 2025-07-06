@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
+  background-color: #EFE4D2;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 .banner-img {
@@ -10,28 +14,37 @@
   height: auto;
   border-radius: 10px;
   margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card1-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 700;
   color: #254D70;
+  text-align: center;
 }
 
 .card1-duration {
-  color: #777;
+  color: #555;
   margin-bottom: 30px;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 section {
   margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
 }
 
 section h2 {
   color: #254D70;
   font-size: 1.5rem;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 ul {
@@ -40,6 +53,7 @@ ul {
 
 ul li {
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 table {
@@ -53,24 +67,46 @@ table td {
   border: 1px solid #ccc;
   padding: 12px;
   text-align: left;
+  font-size: 0.95rem;
 }
 
 table th {
-  background-color: #f4f4f4;
+  background-color: #254D70;
+  color: #ffffff;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+.itinerary div {
+  margin-bottom: 20px;
+}
+
+.itinerary h3 {
   color: #254D70;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .faq details {
   margin-bottom: 10px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-  background: #fdfdfd;
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background-color: #ffffff;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .faq summary {
   font-weight: 600;
-  color: #333;
-  cursor: pointer;
+  color: #254D70;
+  font-size: 1rem;
+}
+
+.faq details[open] {
+  background-color: #f6f9fc;
+  border-color: #254D70;
 }

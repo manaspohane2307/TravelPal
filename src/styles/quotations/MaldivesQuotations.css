@@ -2,158 +2,168 @@
 .maldives-page {
   background-color: #ffffff;
   color: #000000;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 40px auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
-  text-align: left;
+  text-align: center;
+  padding: 40px 5%;
+  box-sizing: border-box;
 }
 
-/* Headings + Links */
-h1, h2, h3 {
-  color: #000000;
-  margin-bottom: 16px;
-  font-weight: 600;
+/* Hero Section */
+.maldives-hero {
+  position: relative;
+  height: 300px;
+  background: url('../../assets/maldives/card1.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
 }
 
+.maldives-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+.maldives-heading {
+  position: relative;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Guide Link */
 .guide-link {
-  color: #e63946;
+  color: #254D70;
   text-decoration: none;
   font-weight: 500;
-  border-bottom: 2px solid #e63946;
+  border-bottom: 2px solid #254D70;
+  transition: all 0.3s ease;
 }
 
 .guide-link:hover {
   color: #000000;
   border-bottom: 2px solid #000000;
+  background-color: rgba(37, 77, 112, 0.1);
 }
 
 .guide-line {
   font-size: 1.1rem;
-  margin-bottom: 24px;
+  margin: 24px 0;
+  text-align: center;
 }
 
-/* Section Spacing */
+/* Section Headings */
+.section-heading {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-heading {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Content Boxes */
 .intro,
+.why-choose,
 .quick-facts,
 .places,
-.why-choose,
 .reach,
-.season,
-.table-section,
-.card-section {
-  margin-bottom: 60px;
-}
-
-/* Quick Facts */
-.quick-facts {
-  background: #f7f7f7;
-  padding: 24px;
+.season {
+  background-color: #EFE4D2;
   border-radius: 12px;
-}
-
-.quick-facts ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.quick-facts li {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-}
-
-/* Places */
-.places {
-  background-color: #f7f7f7;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-.places ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.places li {
-  margin-bottom: 8px;
-}
-
-/* Why Choose Us */
-.why-choose {
-  background-color: #f7f7f7;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-/* Reach & Season */
-.reach h3,
-.season h3 {
-  margin-top: 16px;
-  font-size: 1.1rem;
-}
-
-/* Table Styles */
-.quotation-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 0.95rem;
-}
-
-.quotation-table th {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 12px 16px;
-  text-align: left;
-  font-weight: 600;
-}
-
-.quotation-table td {
-  padding: 12px 16px;
-  border-top: 1px solid #dddddd;
-}
-
-.quotation-table tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
-/* Card Section */
-.card-section h2 {
+  padding: 32px 5%;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
   text-align: center;
-  margin-bottom: 32px;
-  color: #000000;
-  font-size: 1.6rem;
-  font-weight: 600;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Card Grid */
-.cards-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px;
+.intro p,
+.why-choose p,
+.quick-facts p,
+.places p,
+.reach p,
+.season p {
+  text-align: center;
 }
 
-/* Card Styles */
+/* Cards Section */
+.card-section {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 20px;
+}
+
+.cards-scroll-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(50% - 12px); /* Leaves 24px total space between two cards */
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 12px; /* Optional: for even padding start */
+}
+
+.cards-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
+  scroll-snap-align: start;
   background-color: #ffffff;
   border-radius: 12px;
   color: #000000;
-  width: calc(33.33% - 24px);
-  min-width: 280px;
-  max-width: 340px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  animation: fadeInUp 0.6s forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  .cards-scroll-wrapper {
+    grid-auto-columns: 100%;
+    gap: 16px;
+  }
+}
+
+
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .card img {
@@ -164,6 +174,7 @@ h1, h2, h3 {
 
 .card-content {
   padding: 16px;
+  text-align: center;
 }
 
 .card-title {
@@ -179,12 +190,11 @@ h1, h2, h3 {
 
 .card-description {
   font-size: 0.88rem;
-  color: #333333;
+  color: #000000;
   margin-top: 10px;
   margin-bottom: 14px;
 }
 
-/* Card Buttons */
 .card-actions {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +202,7 @@ h1, h2, h3 {
 }
 
 .card-actions button {
-  background-color: #e63946;
+  background-color: #254D70;
   color: #ffffff;
   border: none;
   padding: 8px 12px;
@@ -201,9 +211,86 @@ h1, h2, h3 {
   font-weight: 500;
   cursor: pointer;
   flex: 1;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .card-actions button:hover {
-  background-color: #b51c2c;
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+/* Mobile: show 1 card per view */
+@media (max-width: 768px) {
+  .cards-scroll-wrapper {
+    grid-auto-columns: 100%;
+  }
+}
+
+/* Scrollable Boxes */
+.scroll-box-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.scroll-box-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-box {
+  min-width: 250px;
+  max-width: 280px;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.scroll-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-box strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #254D70;
+  font-size: 1rem;
+}
+
+/* Flex Sections for Reach & Season */
+.dual-box-section {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dual-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1 1 300px;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.dual-box h3 {
+  color: #254D70;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.dual-box p {
+  font-size: 0.95rem;
+  color: #333333;
 }

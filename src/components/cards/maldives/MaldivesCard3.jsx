@@ -7,11 +7,11 @@ export default function MaldivesCard3() {
     <div className="card3-container">
       <img
         src={bannerImg}
-        alt="Mesmerizing Maldives Tour"
+        alt="Budget Delight in Maldives Tour"
         className="card3-banner"
       />
       <h1 className="card3-title">
-        Mesmerizing Maldives Tour Package – 4 Nights & 5 Days
+        Budget Delight Maldives Tour – 4 Nights & 5 Days
       </h1>
 
       <section className="card3-section">

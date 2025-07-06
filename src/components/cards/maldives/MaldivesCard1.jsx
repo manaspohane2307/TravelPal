@@ -17,10 +17,7 @@ export default function MaldivesCard1() {
           Pack your backpacks and get ready for a stupendous Maldives honeymoon
           package from Hyderabad. The Maldives is one of those rare places which
           is covered by unbelievable beaches and lush forests. Islands of
-          Maldives are the pearls in the sea of blue. With a breathtakingly
-          beautiful coastline, lush forested interior, fantastic diving
-          possibilities and a far-flung location, the Maldives is a perfect
-          place to enjoy quality time with your partner.
+          Maldives are the pearls in the sea of blue...
         </p>
       </section>
 
@@ -69,12 +66,10 @@ export default function MaldivesCard1() {
       <section className="highlights">
         <h2>Highlights</h2>
         <ul>
-          <li>
-            Soak up the sun & enjoy your sojourn amidst the serene environs
-          </li>
+          <li>Soak up the sun & enjoy your sojourn amidst serene environs</li>
           <li>Take delight in a spa treatment with your partner</li>
-          <li>Dive in underwater world to explore the wonders of Maldives</li>
-          <li>Enjoy diving in the coral reefs, windsurfing, kayaking & more</li>
+          <li>Dive in the underwater world to explore Maldives’ wonders</li>
+          <li>Enjoy diving, windsurfing, kayaking & more</li>
         </ul>
       </section>
 
@@ -84,23 +79,19 @@ export default function MaldivesCard1() {
           <h3>Day 1: Maldives – Arrival, Leisure Day</h3>
           <p>
             Arrive at Male International Airport. Transfer to Olhuveli Beach
-            Resort & Spa via speedboat. Check-in and spend the day exploring or
-            relaxing. Enjoy a welcome dinner.
+            Resort & Spa via speedboat...
           </p>
         </div>
         <div>
           <h3>Day 2: Maldives – Leisure Day</h3>
           <p>
-            After breakfast, explore on your own—local markets, pristine
-            beaches, or enjoy at the resort.
+            Explore on your own—local markets, pristine beaches, or enjoy at the
+            resort.
           </p>
         </div>
         <div>
           <h3>Day 3: Maldives – Leisure Day</h3>
-          <p>
-            Enjoy water activities or spa experiences at the resort. Leisure
-            time with your partner.
-          </p>
+          <p>Enjoy water activities or spa experiences at the resort.</p>
         </div>
         <div>
           <h3>Day 4: Maldives – Departure</h3>
@@ -124,10 +115,8 @@ export default function MaldivesCard1() {
           <li>2 Nights Grand Beach Villa + 1 Night Deluxe Water Villa</li>
           <li>All meals at Sunset Restaurant</li>
           <li>Return speedboat transfers</li>
-          <li>
-            Fruit basket, honeymoon dinner, bed decoration, celebratory cake
-          </li>
-          <li>Free dolphin cruise (minimum 3 nights)</li>
+          <li>Fruit basket, honeymoon dinner, bed decoration, cake</li>
+          <li>Free dolphin cruise (min. 3 nights)</li>
           <li>Children (up to 2) stay free (taxes apply)</li>
         </ul>
       </section>
@@ -145,35 +134,21 @@ export default function MaldivesCard1() {
         <h2>FAQs About Maldives Tour Packages</h2>
         <details>
           <summary>Which are the must-have cuisines of Maldives?</summary>
-          <p>
-            Bis keemiya, Boshi mashuni, Garudhiya and Saagu bondibai are some
-            must-try dishes.
-          </p>
+          <p>Bis keemiya, Boshi mashuni, Garudhiya and Saagu bondibai...</p>
         </details>
         <details>
           <summary>What is the best time for a honeymoon to Maldives?</summary>
           <p>
-            December to February (dry season), May to November (best marine life
-            visibility).
+            December to February (dry season), May to November (marine life)
           </p>
         </details>
         <details>
-          <summary>
-            Can honeymooners pay in installments for this package?
-          </summary>
-          <p>
-            Yes, you can pay in installments. Consult our travel advisor for
-            options.
-          </p>
+          <summary>Can honeymooners pay in installments?</summary>
+          <p>Yes, speak to our travel advisor for EMI options.</p>
         </details>
         <details>
-          <summary>
-            What are the best attractions of Olhuveli Beach Resort & Spa?
-          </summary>
-          <p>
-            Water motor scooter rides, jet skiing, banana boat, canoeing, and
-            more.
-          </p>
+          <summary>Best attractions at Olhuveli Beach Resort?</summary>
+          <p>Jet skiing, banana boat, canoeing, dolphin cruises, etc.</p>
         </details>
       </section>
     </div>
