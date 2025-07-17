@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="hero-text">
-        <h2 className="hero-title">Discover WanderPilot</h2>
+        <h2 className="hero-title">Discover TravelPal</h2>
         <h1 className="hero-line">
           From Dreaming to Departing — Effortless Travel Planning Starts Here
         </h1>
@@ -16,11 +16,11 @@ const HeroSection = () => {
         </div>
 
         <p className="hero-subtext">
-          Say goodbye to stressful planning — WanderPilot simplifies your entire
+          Say goodbye to stressful planning — TravelPal simplifies your entire
           travel experience with intelligent, personalized trip creation
           tailored to your needs. No more spreadsheets, tabs, endless research,
           or decision fatigue. From spontaneous weekend escapes to
-          once-in-a-lifetime adventures, WanderPilot curates every detail to
+          once-in-a-lifetime adventures, Travelpal curates every detail to
           match your style, time, and budget — delivering seamless journeys that
           feel effortless, yet unforgettable.
         </p>

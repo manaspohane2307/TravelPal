@@ -20,7 +20,7 @@ const Navbar = () => {
       {/* Left: Brand */}
       <div className="navbar-left">
         <Link to="/" className="navbar-logo">
-          <h1>WanderPilot</h1>
+          <h1>TravelPal</h1>
         </Link>
       </div>
 

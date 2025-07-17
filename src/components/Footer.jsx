@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Left Side */}
         <div className="footer-left">
-          <h2 className="footer-title">WanderPilot</h2>
+          <h2 className="footer-title">TravelPal</h2>
           <p className="footer-subtext">The smarter way to travel</p>
         </div>
 

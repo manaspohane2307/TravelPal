@@ -13,12 +13,12 @@ const steps = [
 const HowItWorks = () => {
   return (
     <section className="how-section">
-      <h1 className="how-heading">How WanderPilot Works</h1>
+      <h1 className="how-heading">How TravelPal Works</h1>
       <div className="how-box">
         <div className="how-text">
-          <h2 className="sub-heading">Plan Smarter With WanderPilot</h2>
+          <h2 className="sub-heading">Plan Smarter With TravlePal</h2>
           <p className="how-paragraph">
-            WanderPilot revolutionizes trip planning by combining user input with intelligent AI processing.
+            TravelPal revolutionizes trip planning by combining user input with intelligent AI processing.
             Just tell us about your dream trip, and we’ll build an optimized day-by-day itinerary for you.
             Customize it as you go and enjoy seamless travel planning with just a few clicks.
           </p>
